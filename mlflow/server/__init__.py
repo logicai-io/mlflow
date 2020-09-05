@@ -4,6 +4,7 @@ import sys
 import textwrap
 
 from flask import Flask, send_from_directory, Response
+from flask_cors import CORS
 
 from mlflow.server import handlers
 from mlflow.server.handlers import (
@@ -23,6 +24,7 @@ PROMETHEUS_EXPORTER_ENV_VAR = "prometheus_multiproc_dir"
 REL_STATIC_DIR = "js/build"
 
 app = Flask(__name__, static_folder=REL_STATIC_DIR)
+CORS(app)
 STATIC_DIR = os.path.join(app.root_path, REL_STATIC_DIR)
 
 
