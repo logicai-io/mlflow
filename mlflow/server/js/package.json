@@ -73,13 +73,13 @@
   },
   "scripts": {
     "start": "react-app-rewired start",
-    "build": "react-app-rewired --max_old_space_size=8192 build",
+    "build": "react-app-rewired --max_old_space_size=8192 build && ./copy_dist_to_backend.sh",
     "test": "react-app-rewired test --env=jsdom --colors",
     "eject": "react-scripts eject",
     "lint": "eslint src",
     "lint:fix": "eslint src --fix"
   },
-  "homepage": "static-files",
+  "homepage": "/static/mlflow",
   "jest": {
     "collectCoverageFrom": [
       "src/**/*.{js,jsx}",

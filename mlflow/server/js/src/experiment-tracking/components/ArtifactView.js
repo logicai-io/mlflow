@@ -327,7 +327,8 @@ const TREEBEARD_STYLE = {
       listStyle: 'none',
       margin: 0,
       padding: 0,
-      backgroundColor: '#FAFAFA',
+      // commenting out for dark mode
+      // backgroundColor: '#FAFAFA',
       fontSize: '14px',
       maxWidth: '500px',
       height: '556px',

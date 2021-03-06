@@ -41,6 +41,7 @@ setup(
         'waitress; platform_system == "Windows"',
         'gunicorn; platform_system != "Windows"',
         "Flask",
+        "flask-cors",
         "numpy",
         "pandas",
         "python-dateutil",

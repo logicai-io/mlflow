@@ -8,3 +8,46 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
+
+
+/** Enhancements */
+body {
+  padding: 25px 0 0 0;
+}
+
+/** Dark mode */
+body#dark {
+  background-color: #1e1e1e !important;
+}
+body#dark #root *:not(button, i, svg, path, .dropdown-menu, button span, .dropdown-menu *, .staging-tag, .production-tag, a) {
+  background-color: transparent; 
+  color: white !important;
+  border-color: hsla(0,0%,100%,.12) !important;
+}
+body#dark .staging-tag, body#dark .production-tag {
+  background-color: transparent;
+}
+body#dark .clear-button {
+  color: black;
+}
+body#dark .mde-header ul.mde-header-group li.mde-header-item button {
+  color: white;
+}
+body#dark .ExperimentView .ag-column-hover, body#dark .ExperimentView .ag-row-hover {
+  background-color: #1a1a1a !important;
+}
+body#dark .active-experiment-list-item {
+  background-color: rgba(67,199,234,.1) !important;
+}
+body#dark .artifact-right iframe {
+  background-color: white !important;
+}
+body#dark table th {
+  background-color: #171717 !important;
+}
+body#dark .header-container a > div {
+  background-color: transparent !important
+}
+body#dark .ant-table-scroll > .ant-table-body {
+  background-color: #1e1e1e !important;
+}
