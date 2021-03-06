@@ -10,24 +10,24 @@ body {
 }
 
 
-body {
+body#dark {
   background-color: #1e1e1e !important;
   padding: 25px 0 0 0;
 }
-#root *:not(button, i, svg, path, .dropdown-menu, button span, .dropdown-menu *) {
+body#dark #root *:not(button, i, svg, path, .dropdown-menu, button span, .dropdown-menu *) {
   background-color: transparent; 
   color: white !important;
   border-color: hsla(0,0%,100%,.12) !important;
 }
-.clear-button {
+body#dark .clear-button {
   color: black;
 }
-.mde-header ul.mde-header-group li.mde-header-item button {
+body#dark .mde-header ul.mde-header-group li.mde-header-item button {
   color: white;
 }
-.ExperimentView .ag-column-hover, .ExperimentView .ag-row-hover {
+body#dark .ExperimentView .ag-column-hover, .ExperimentView .ag-row-hover {
   background-color: #1a1a1a !important;
 }
-.active-experiment-list-item {
+body#dark .active-experiment-list-item {
   background-color: rgba(67,199,234,.1) !important;
 }
